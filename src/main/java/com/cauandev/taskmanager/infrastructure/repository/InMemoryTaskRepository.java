@@ -3,9 +3,11 @@ package com.cauandev.taskmanager.infrastructure.repository;
 import com.cauandev.taskmanager.domain.Task;
 import com.cauandev.taskmanager.domain.TaskRepository;
 import com.cauandev.taskmanager.domain.TaskId;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class InMemoryTaskRepository implements TaskRepository {
     private final Map<TaskId, Task> storage = new HashMap<>();
     @Override
