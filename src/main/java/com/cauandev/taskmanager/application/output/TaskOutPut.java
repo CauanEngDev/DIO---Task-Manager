@@ -7,7 +7,7 @@ import java.util.Optional;
 public record TaskOutPut(String id, String title, Optional<String> description, String status) {
     public static TaskOutPut from(Task task) {
         return new TaskOutPut(
-                task.getId().toString(),
+                task.getId().id().toString(),
                 task.getTitle(),
                 task.getDescription(),
                 task.getStatus().name()
