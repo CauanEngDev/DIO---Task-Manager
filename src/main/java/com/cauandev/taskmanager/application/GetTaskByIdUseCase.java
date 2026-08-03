@@ -7,10 +7,10 @@ import com.cauandev.taskmanager.domain.TaskRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GetByIdTaskUseCase {
+public class GetTaskByIdUseCase {
     private final TaskRepository repository;
 
-    public GetByIdTaskUseCase(TaskRepository repository) {
+    public GetTaskByIdUseCase(TaskRepository repository) {
         this.repository = repository;
     }
 
